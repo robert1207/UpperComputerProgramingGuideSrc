@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform_serial_port_gui_tool", "winform_serial_port_gui_tool\winform_serial_port_gui_tool.csproj", "{D5195719-2654-4DF8-845F-41E81B529E3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5195719-2654-4DF8-845F-41E81B529E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5195719-2654-4DF8-845F-41E81B529E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5195719-2654-4DF8-845F-41E81B529E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5195719-2654-4DF8-845F-41E81B529E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85339055-D53E-4FAF-9777-CC15C544A2C0}
+	EndGlobalSection
+EndGlobal

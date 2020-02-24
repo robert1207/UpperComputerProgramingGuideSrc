@@ -1,0 +1,10 @@
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\bin\Debug\NetTcpUdpTool.exe.config
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\bin\Debug\NetTcpUdpTool.exe
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\bin\Debug\NetTcpUdpTool.pdb
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.csprojAssemblyReference.cache
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.Properties.Resources.resources
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.csproj.GenerateResource.cache
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.csproj.CoreCompileInputs.cache
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.exe
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.pdb
+C:\Users\robert\source\repos\NetTcpUdpTool\NetTcpUdpTool\obj\Debug\NetTcpUdpTool.Form1.resources

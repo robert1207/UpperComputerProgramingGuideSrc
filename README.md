@@ -9,4 +9,6 @@ Source code for upper computer programing guide.
 | 2 | 2_2_winform_serial_port_gui_tool | winform串口小助手 |
 | 3 | 2_4_qt_net_tcp_udp_gui_tool | qt网络Tcp/Udp调试小助手 |
 | 4 | 2_4_winform_net_tcp_udp_gui_tool | winform网络Tcp/Udp调试小助手 |
+| 5 | 2_9_qt_net_finding_device | qt查找局域网网络设备 |
+| 6 | 2_9_winform_net_finding_device | winform查找局域网网络设备 |
 

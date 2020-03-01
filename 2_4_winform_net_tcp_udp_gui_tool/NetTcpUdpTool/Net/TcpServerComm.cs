@@ -75,16 +75,12 @@ namespace NetTcpUdpTool.Net
 
         public bool Send(byte[] data)
         {
-           // Char[] c_data = Encoding.ASCII.GetChars(data);
-          // Console.WriteLine("----1"+ new string(c_data));
             try
             {
                 try
                 {
                     if (tcpClient.Connected)
                     {
-                   //     Char[] c_data2 = Encoding.ASCII.GetChars(data);
-                     //   Console.WriteLine("----2" + new string(c_data2));
 
                         stream.Write(data, 0, data.Length);
                         return true;

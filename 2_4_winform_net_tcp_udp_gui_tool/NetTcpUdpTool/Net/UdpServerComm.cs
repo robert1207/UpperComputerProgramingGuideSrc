@@ -58,15 +58,6 @@ namespace NetTcpUdpTool.Net
             {
                 try
                 {
-                     Char[] c_data = Encoding.ASCII.GetChars(data);
-                     Console.WriteLine("----1"+ new string(c_data));
-                    Console.WriteLine("---1 addr = "+ sendDataRemoteInfo.Address);
-                    Console.WriteLine("---1 port = " + sendDataRemoteInfo.Port);
-
-
-                    
-
-
                     int len = udpClient.Send(data, data.Length, sendDataRemoteInfo);
                     if (len > 0) return true;
                 }
@@ -126,9 +117,6 @@ namespace NetTcpUdpTool.Net
                                 sendDataRemoteInfo.Address = remoteIpep.Address;
                                 sendDataRemoteInfo.Port = remoteIpep.Port;
                             }
-
-                            Console.WriteLine("--2 -addr = " + sendDataRemoteInfo.Address);
-                            Console.WriteLine("--2 -port = " + sendDataRemoteInfo.Port);
 
                             if (onNetRecvListener != null)
                             {

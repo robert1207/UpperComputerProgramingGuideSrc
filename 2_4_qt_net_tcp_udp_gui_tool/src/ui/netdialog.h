@@ -11,7 +11,6 @@
 
 #include "../net/netmanager.h"
 #include "../views/toast/toast.h"
-#include "../utils/stringutil.h"
 
 #include <QString>
 #include <QDialog>

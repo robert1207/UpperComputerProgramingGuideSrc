@@ -106,8 +106,6 @@ namespace NetTcpUdpTool.Net
                         else
                         {
                             byte[] bytRecv = udpClient.Receive(ref remoteIpep); //block recv
-                            Char[] c_data = Encoding.ASCII.GetChars(bytRecv);
-                            Console.WriteLine("----33 " + new string(c_data));
                             if (onNetRecvListener != null)
                             {
                                 onNetRecvListener(bytRecv, bytRecv.Length, remoteIpep);

@@ -1,0 +1,8 @@
+1. log information about the user's computer;
+2. set and check the size of the current logged file;
+3. user can config timestamp format;
+4. user can config out-put log file's string codec;
+5. user can make a self-define log-string-formater;
+6. add support of "void debug(const char *msg, ...)";
+7. support log the str into QSLite database;
+8. support log the str into telnet server or interface of http(s);

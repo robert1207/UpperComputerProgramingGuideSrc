@@ -8,6 +8,9 @@
 #include "netdialog.h"
 #include "ui_dialog.h"
 
+#include "my_log.h"
+#include "../utils/hexutils.h"
+
 KcpDialog::KcpDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dialog)
@@ -110,24 +113,28 @@ void KcpDialog::on_pushButtonSend_clicked()
         return;
     }
 
-    QByteArray send_ba;
-    send_ba = send_str.toUtf8();
-
     if(ui->checkBoxSendHex->isChecked()) {
-        send_ba = send_ba.toHex();
-    }
+        QByteArray senddata;
+        HexUtils::HexStringToByteArray(send_str, senddata);
+        netmanager_p->Send(senddata.data(), senddata.size());
 
-    netmanager_p->Send(send_ba.data(), send_ba.size());
+       /* int count = senddata.length();
+        for (int a = 0; a < count; a ++) {
+            qDebug()  << "send data = " << senddata.at(a);
+        }*/
+    } else {
+        QByteArray send_ba;
+        send_ba = send_str.toUtf8();
+        netmanager_p->Send(send_ba.data(), send_ba.size());
+    }
 }
 
 void KcpDialog::OnRecv(QByteArray *data, const QString ip, const quint16 port) {
 
         QString str;
         if(ui->checkBoxRecvHex->isChecked()) {
-             QByteArray ba;
-             QString temp(*data);
-             StringUtil::StringToHex(temp, ba);
-             str += ba;
+            QString temp = HexUtils::ByteArrayToHexString(*data);
+             str += temp;
         } else {
              str += *data;
         }

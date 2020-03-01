@@ -1,0 +1,10 @@
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\bin\Debug\NetFindingDevice.exe.config
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\bin\Debug\NetFindingDevice.exe
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\bin\Debug\NetFindingDevice.pdb
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.csprojAssemblyReference.cache
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.Form1.resources
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.Properties.Resources.resources
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.csproj.GenerateResource.cache
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.csproj.CoreCompileInputs.cache
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.exe
+C:\Users\robert\source\repos\NetFindingDevice\NetFindingDevice\obj\Debug\NetFindingDevice.pdb

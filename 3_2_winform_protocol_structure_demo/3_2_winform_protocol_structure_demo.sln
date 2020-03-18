@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_2_winform_protocol_structure_demo", "3_2_winform_protocol_structure_demo\3_2_winform_protocol_structure_demo.csproj", "{C3119DE1-D1EB-48AB-B9CF-7D475FC9A71B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3119DE1-D1EB-48AB-B9CF-7D475FC9A71B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3119DE1-D1EB-48AB-B9CF-7D475FC9A71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3119DE1-D1EB-48AB-B9CF-7D475FC9A71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3119DE1-D1EB-48AB-B9CF-7D475FC9A71B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1CAA8A4-625F-43B2-AD09-00695510A48C}
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  *
  * This file is part of Log4Qt library.
  *
@@ -21,14 +21,13 @@
 #ifndef LOGGEROBJECT_H
 #define LOGGEROBJECT_H
 
-#include "log4qt/logger.h"//每个使用log4qt的类都需要包含此头文件
+
 
 #include <QObject>
 
 class LoggerObject : public QObject
 {
     Q_OBJECT
-   // LOG4QT_DECLARE_QCLASS_LOGGER    //在继承类QObject的类中，可以使用此宏定义，声明logger
 public:
     explicit LoggerObject(QObject *parent = nullptr);
 

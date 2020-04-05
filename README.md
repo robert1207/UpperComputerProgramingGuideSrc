@@ -2,6 +2,8 @@
 
 Source code for upper computer programing guide.
 
+*注：本目录中所有使用Qt编写的工程，均支持在MacOS、Windows下正确运行。在Linux系统下理论上完全支持，但是没有实际测试过。*
+
 #### 目录说明
 | 编号 | 文件夹 | 描述 |
 | ------ | ------ | ------ |
@@ -14,4 +16,6 @@ Source code for upper computer programing guide.
 | 7 | 3_2_qt_protocol_structure_demo | qt上位机通信构架示例 |
 | 8 | 3_2_virtual_hardware | 下位机模拟器（仅用于测试本通信框架） |
 | 9 | 3_2_winform_protocol_structure_demo | winform上位机通信构架示例 |
+| 10 | 12_4_qt_log4qt_demo | qt中使用log4qt的示例代码 |
+
 

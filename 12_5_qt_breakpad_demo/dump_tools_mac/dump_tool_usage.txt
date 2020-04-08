@@ -1,0 +1,4 @@
+dump_tool_usage
+
+run command like below  will be ok for getting result at stdout
+sh ./process_dump.sh LedStripEditor 462E9652-F7E0-4BFD-897E-87ABFC0C6193.dmp

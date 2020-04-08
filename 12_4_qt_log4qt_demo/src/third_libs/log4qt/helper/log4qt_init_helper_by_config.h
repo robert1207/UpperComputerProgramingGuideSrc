@@ -1,5 +1,5 @@
-﻿#ifndef LOG4QT_HELPER_H
-#define LOG4QT_HELPER_H
+﻿#ifndef LOG4QT_HELPER_BY_CONFIG_H
+#define LOG4QT_HELPER_BY_CONFIG_H
 
 #include "log4qt/logger.h"
 #include "log4qt/propertyconfigurator.h"

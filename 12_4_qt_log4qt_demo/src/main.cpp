@@ -4,6 +4,7 @@
 #include <QStandardPaths>
 #include <QDir>
 
+#include "log4qt_init_helper_by_config.h"
 #include "log4qt_init_helper_by_coding.h"
 
 #include "loggerstatic.h"
@@ -22,6 +23,15 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    //注意：如果在windows使用msvc编译运行直接闪退，请切换为release版本编译，
+    //反则，使用debug编译，
+    //根据你编译器和方法的不同，需要你 使用log4qt的源码，重新编译log4qt.dll 或 log4qt.a
+
+    //those settings are need by QStandardPaths
+    QCoreApplication::setApplicationName("Log4qtDemo");
+    QCoreApplication::setApplicationVersion("0.0.1");
+    QCoreApplication::setOrganizationName("OrgName");
+    QCoreApplication::setOrganizationDomain("name.org");
 
     /*
     //使用config 配置Log4Qt
@@ -29,16 +39,9 @@ int main(int argc, char *argv[])
     //QString configFileAbsPath = QCoreApplication::applicationFilePath() + QStringLiteral(".log4qt.properties");
     QString configFileAbsPath  = QCoreApplication::applicationDirPath() +"/"+ QStringLiteral("log4qt.properties");
     SetupLog4QtByConfigWithConfigFileAbsPath(configFileAbsPath);
-    */
-
+*/
 
     //使用纯代码配置Log4Qt
-    //those settings are need by QStandardPaths
-    QCoreApplication::setApplicationName("Log4qtDemo");
-    QCoreApplication::setApplicationVersion("0.0.1");
-    QCoreApplication::setOrganizationName("OrgName");
-    QCoreApplication::setOrganizationDomain("name.org");
-
     QStringList path_list2 = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
     QString std_base_path =  path_list2[0];
     QString my_log_path = std_base_path + "/logs";
@@ -69,7 +72,7 @@ int main(int argc, char *argv[])
     w.show();
     int ret =  a.exec();
 
-    //ShutDownLog4QtByConfig();//exec()执行完成后，才关闭logger
+   //ShutDownLog4QtByConfig();//exec()执行完成后，才关闭logger
     ShutDownLog4QtByCoding();//exec()执行完成后，才关闭logger
     return ret;
 }

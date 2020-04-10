@@ -1,6 +1,8 @@
 ﻿#include "ui/demodialog.h"
 
 #include <QApplication>
+#include <QStandardPaths>
+#include <QDir>
 
 #include "log4qt_init_helper_by_coding.h"
 
@@ -19,8 +21,7 @@ LOG4QT_DECLARE_STATIC_LOGGER(logger, Main)
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    DemoDialog w;
-    w.show();
+
 
     /*
     //使用config 配置Log4Qt
@@ -32,8 +33,18 @@ int main(int argc, char *argv[])
 
 
     //使用纯代码配置Log4Qt
-    QString logSavingDirAbsPath  = QCoreApplication::applicationDirPath();
-    SetupLog4QtByCodingWithLogSavingDirAbsPath(logSavingDirAbsPath);
+    //those settings are need by QStandardPaths
+    QCoreApplication::setApplicationName("Log4qtDemo");
+    QCoreApplication::setApplicationVersion("0.0.1");
+    QCoreApplication::setOrganizationName("OrgName");
+    QCoreApplication::setOrganizationDomain("name.org");
+
+    QStringList path_list2 = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
+    QString std_base_path =  path_list2[0];
+    QString my_log_path = std_base_path + "/logs";
+    // QString logSavingDirAbsPath  = QCoreApplication::applicationDirPath();
+     qDebug() << "my_log_path = " << my_log_path;
+     SetupLog4QtByCodingWithLogSavingDirAbsPath(my_log_path);
 
 
     //可以使用以下三种方式编写Log输出条目
@@ -54,6 +65,8 @@ int main(int argc, char *argv[])
     LoggerObjectPrio object2;
     LoggerStatic object3;
 
+    DemoDialog w;
+    w.show();
     int ret =  a.exec();
 
     //ShutDownLog4QtByConfig();//exec()执行完成后，才关闭logger

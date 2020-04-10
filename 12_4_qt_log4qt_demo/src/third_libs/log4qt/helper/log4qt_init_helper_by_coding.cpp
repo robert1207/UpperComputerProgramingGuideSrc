@@ -1,6 +1,9 @@
 ﻿#include "log4qt_init_helper_by_coding.h"
 
 
+#include <QDir>
+#include <QApplication>
+
 static void PrintLogHead() {
     auto logger = Log4Qt::Logger::rootLogger();
 
@@ -19,6 +22,17 @@ static void PrintLogTail() {
 
 void SetupLog4QtByCodingWithLogSavingDirAbsPath(QString log_saving_dir_abs_path)
 {
+    QString absPath = log_saving_dir_abs_path;
+    if(!QDir::isAbsolutePath(absPath)) {
+        absPath = QDir::cleanPath(qApp->applicationDirPath() + "/" + log_saving_dir_abs_path);
+    }
+    Q_ASSERT(QDir::isAbsolutePath(absPath));
+
+    QDir().mkpath(absPath);
+    if (!QDir().exists(absPath)) {
+        qDebug("Failed to set log path which not exists: %s", qPrintable(absPath));
+        return;
+    }
 
     auto rootLogger = Log4Qt::Logger::rootLogger();
 
@@ -85,8 +99,10 @@ void SetupLog4QtByCodingWithLogSavingDirAbsPath(QString log_saving_dir_abs_path)
 
     //Create a rolling file appender
     Log4Qt::RollingFileAppender *rollingFileAppender =
-            new Log4Qt::RollingFileAppender(layout, log_saving_dir_abs_path + "/basic.log", true);
+            new Log4Qt::RollingFileAppender(layout, absPath + "/basic.log", true);
     rollingFileAppender->setName(QStringLiteral("My rolling file appender"));
+    rollingFileAppender->setMaximumFileSize(20 * 1024 * 1024);//default is 10 MB (10 * 1024 * 1024).
+    rollingFileAppender->setThreshold(Log4Qt::Level::Value::INFO_INT);//sub-log-level
     rollingFileAppender->activateOptions();
     rootLogger->addAppender(rollingFileAppender);
 

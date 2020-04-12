@@ -17,8 +17,9 @@ Source code for upper computer programing guide.
 | 8 | 3_2_virtual_hardware | 下位机模拟器（仅用于测试本通信框架） |
 | 9 | 3_2_winform_protocol_structure_demo | winform上位机通信构架示例 |
 | 10 | 4_3_prototype_drawing_demo | 电子书阅读器原型图工程文件 |
-| 11 | 12_4_qt_log4qt_demo | qt中使用log4qt的示例代码 |
-| 12 | 12_5_qt_breakpad_demo | qt中使用Breakpad的示例代码 |
+| 11 | 4_4_ui_design_doc | 电子书阅读器Ui设计图源文件 |
+| 12 | 12_4_qt_log4qt_demo | qt中使用log4qt的示例代码 |
+| 13 | 12_5_qt_breakpad_demo | qt中使用Breakpad的示例代码 |
 
 
 

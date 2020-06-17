@@ -1,9 +1,10 @@
-#include "serialdialog.h"
+﻿#include "serialdialog.h"
 #include "ui_serialdialog.h"
 
 #include <QDebug>
 #include <QMessageBox>
 #include <QTextCursor>
+#include "stringutil.h"
 
 #define DEFAULT_BAUD_INDEX  3
 #define DEFAULT_DATABITS_INDEX  3
@@ -109,17 +110,31 @@ void SerialDialog::on_pushButtonSerialSend_clicked()
     if(text.isEmpty()) {
         QMessageBox::information(nullptr, "Error", "Please input the sending content!", QMessageBox::Yes, QMessageBox::Yes);
     } else {
-        QByteArray data;
-        data.append(text);
 
-        qDebug() << "send:" << data.data();
-        my_serial_port_p->SendData(data);
-        ui->textEditSend->clear();
+        QByteArray send_ba;
+
+
+        if(ui->checkBox_Tx->isChecked()) {
+            StringUtil::StringToHex(text, send_ba);
+            //send_ba = send_ba.toHex();
+        } else {
+            send_ba = text.toUtf8();
+        }
+
+        qDebug() << "send data = " << send_ba << "   len = " << send_ba.length();
+        my_serial_port_p->SendData(send_ba);
+      //  ui->textEditSend->clear();
     }
 }
 
 void SerialDialog::ReceivedData(const QByteArray &data) {
-    qDebug() << "recv:" << data.data();
-    ui->textEditReceive->append(data.data());
+    QString str;
+    if(ui->checkBox_Rx->isChecked()) {
+        str +=  QString(data.toHex(' '));
+    } else {
+        str += data;
+    }
+
+    ui->textEditReceive->append(str);
     ui->textEditReceive->moveCursor(QTextCursor::End);
 }

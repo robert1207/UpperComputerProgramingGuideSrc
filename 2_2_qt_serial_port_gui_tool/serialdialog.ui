@@ -29,9 +29,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>30</y>
+     <y>40</y>
      <width>301</width>
-     <height>191</height>
+     <height>171</height>
     </rect>
    </property>
   </widget>
@@ -49,7 +49,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
+     <y>13</y>
      <width>58</width>
      <height>16</height>
     </rect>
@@ -62,7 +62,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>230</y>
+     <y>223</y>
      <width>58</width>
      <height>16</height>
     </rect>
@@ -75,7 +75,7 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>40</y>
+     <y>50</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -88,7 +88,7 @@
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>30</y>
+     <y>40</y>
      <width>91</width>
      <height>32</height>
     </rect>
@@ -98,7 +98,7 @@
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>60</y>
+     <y>70</y>
      <width>91</width>
      <height>32</height>
     </rect>
@@ -108,7 +108,7 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>70</y>
+     <y>80</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -121,7 +121,7 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>100</y>
+     <y>110</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -134,7 +134,7 @@
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>90</y>
+     <y>100</y>
      <width>91</width>
      <height>32</height>
     </rect>
@@ -144,7 +144,7 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>130</y>
+     <y>170</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -157,7 +157,7 @@
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>120</y>
+     <y>130</y>
      <width>91</width>
      <height>32</height>
     </rect>
@@ -167,7 +167,7 @@
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>160</y>
+     <y>140</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -180,7 +180,7 @@
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>150</y>
+     <y>160</y>
      <width>91</width>
      <height>32</height>
     </rect>
@@ -190,7 +190,7 @@
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>190</y>
+     <y>200</y>
      <width>112</width>
      <height>32</height>
     </rect>
@@ -203,13 +203,39 @@
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>310</y>
+     <y>280</y>
      <width>112</width>
      <height>32</height>
     </rect>
    </property>
    <property name="text">
     <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Tx">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>86</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckBox</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_Rx">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>86</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CheckBox</string>
    </property>
   </widget>
  </widget>

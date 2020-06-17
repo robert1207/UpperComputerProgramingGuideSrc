@@ -1,4 +1,4 @@
-#include "myserialport.h"
+﻿#include "myserialport.h"
 
 #include <QDebug>
 /*
@@ -71,7 +71,7 @@ bool MySerialPort::IsOpen() {
 qint64 MySerialPort::SendData(const QByteArray &data) {
     qint64 res = serial_port_p->write(data);
     serial_port_p->flush();
-    qDebug() << "send data: res = " << res;
+    //qDebug() << "send data: res = " << res;
     return res;
 }
 
@@ -98,7 +98,7 @@ bool MySerialPort::SetStopBits(QSerialPort::StopBits stopBits) {
 }
 
 void MySerialPort::ReadyRead() {
-    //qDebug() << "ReadyRead";
+    qDebug() << "ReadyRead";
     while (!serial_port_p->atEnd()) {
         QByteArray data = serial_port_p->read(100);
         emit ReceivedData(data);

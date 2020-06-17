@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     myserialport.cpp \
-    serialdialog.cpp
+    serialdialog.cpp \
+    stringutil.cpp
 
 HEADERS += \
     myserialport.h \
-    serialdialog.h
+    serialdialog.h \
+    stringutil.h
 
 FORMS += \
     serialdialog.ui

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/tr">
+        <file>tr/app_zh_CN.qm</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>qss/theme.qss</file>
+    </qresource>
+</RCC>

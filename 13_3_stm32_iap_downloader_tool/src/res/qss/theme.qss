@@ -1,0 +1,33 @@
+﻿/******************************* QPushButton *****************************/
+QPushButton[cancel_btn="true"] {
+    color:rgb(33,33,33);
+    background-color:rgb(200,200,200);
+    border-width:0px;
+    border-radius:5px;
+    padding:3px;
+    margin: 0px 5px 0px 5px;
+}
+
+QPushButton[cancel_btn="true"]:pressed {
+    background-color: rgb(180,180,180);
+    border-style:inset;
+    padding-left:4px;
+    padding-top:4px;
+}
+
+QPushButton[ok_btn="true"] {
+    color:rgb(255,255,255);
+    background-color: #3686fe;
+    border-width:0px;
+    border-radius:5px;
+    border-style:outset;
+    padding:3px;
+    margin: 0px 5px 0px 5px;
+}
+
+QPushButton[ok_btn="true"]:pressed {
+    background-color:#176ef2;
+    border-style:inset;
+    padding-left:4px;
+    padding-top:4px;
+}

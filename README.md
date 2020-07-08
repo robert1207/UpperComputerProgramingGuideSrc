@@ -20,7 +20,7 @@ Source code for upper computer programing guide.
 | 11 | 4_4_ui_design_doc | 电子书阅读器Ui设计图源文件 |
 | 12 | 12_4_qt_log4qt_demo | qt中使用log4qt的示例代码 |
 | 13 | 12_5_qt_breakpad_demo | qt中使用Breakpad的示例代码 |
-| 14 | 13_3_stm32_iap_downloader_tool | qt制作一款私有IAP串口下载小工具的上位机源码 |
+| 14 | 13_3_stm32_iap_downloader_tool | qt制作一款私有IAP串口下载小工具的上位机源码(串口实现3章的通信构架) |
 
 
 

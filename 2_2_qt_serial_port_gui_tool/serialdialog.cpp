@@ -121,7 +121,16 @@ void SerialDialog::on_pushButtonSerialSend_clicked()
             send_ba = text.toUtf8();
         }
 
-        qDebug() << "send data = " << send_ba << "   len = " << send_ba.length();
+        //qDebug() << "send data = " << send_ba << "   len = " << send_ba.length();
+
+
+        /*
+        qDebug() << "send data = len = " << send_ba.length();
+        for (int a = 0; a < send_ba.length(); a ++ ) {
+                char* array = send_ba.data();
+                printf("index=%d  %02x\n", a, array[a] & 0xff);
+        }*/
+
         my_serial_port_p->SendData(send_ba);
       //  ui->textEditSend->clear();
     }
@@ -134,6 +143,8 @@ void SerialDialog::ReceivedData(const QByteArray &data) {
     } else {
         str += data;
     }
+
+    qDebug() << "ReceivedData:" << str;
 
     ui->textEditReceive->append(str);
     ui->textEditReceive->moveCursor(QTextCursor::End);
